@@ -43,10 +43,8 @@ while (inWork)
                 string[] days = new String[]{"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
                 Console.Write("Ведите день недели: ");
                 int day = int.Parse(Console.ReadLine());
-                if (day == 6) System.Console.WriteLine(days[day-1] + " - выходной");
-                else if (day == 7) System.Console.WriteLine(days[day-1] + " - выходной");
-                else if (day < 6) System.Console.WriteLine(days[day-1] + " - не выходной");
-                else if (day < 1) System.Console.WriteLine("такого дня нет");
+                if (day == 6 || day == 7) System.Console.WriteLine(days[day-1] + " - выходной");
+                else if (day < 6 && day > 0) System.Console.WriteLine(days[day-1] + " - не выходной");
                 else 
                 {
                     System.Console.WriteLine("такого дня нет");
