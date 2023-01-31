@@ -27,7 +27,7 @@ while (inWork)
                 int n = int.Parse(Console.ReadLine());
                 string s = n.ToString();
                 int len = s.Length;
-                if (len == 3)
+                if (len > 2)
                 {
                     Console.WriteLine(s[2]);
                 }
